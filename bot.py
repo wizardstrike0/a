@@ -11,7 +11,7 @@ import atexit
 from datetime import datetime
 from dateutil.relativedelta import relativedelta
 
-TOKEN = os.getenv('DISCORD_TOKEN', "pastetokenhere")
+TOKEN = os.getenv('DISCORD_TOKEN', "pastetokenhere") # idk how to set up private data values in github 
 if not TOKEN:
     raise ValueError("DISCORD_TOKEN is required!")
 
@@ -1620,3 +1620,4 @@ async def on_member_update(before, after):
 
 
 bot.run(TOKEN)
+
