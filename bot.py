@@ -16,8 +16,8 @@ if not TOKEN:
     raise ValueError("DISCORD_TOKEN is required!")
 
 FLAGGED_GROUP_IDS = [12960473, 35488582, 32418149, 35576099, 1051291555, 34532432, 34107403, 15872214, 35988727, 34202968, 35448137, 12877535, 13835630, 35942619, 8487267, 33301603, 35788564, 35868778, 172319536]
-WHITELIST = [528953104939483186, 713929689768656999]  # Initial whitelist - Add acee406's user ID here
-ADMIN_USER = "wizardstrike1"  # Your Discord username for admin privileges
+WHITELIST = [528953104939483186, 713929689768656999] 
+ADMIN_USER = "wizardstrike1"
 GUILD_ID = 1455289006475448505
 intents = discord.Intents.default()
 intents.voice_states = True
@@ -1617,5 +1617,6 @@ async def on_member_update(before, after):
                     pass  # If we can't send the error message, just log it
         else:
             print(f"❌ No suitable channel found for auto-check of {after.display_name}")
+
 
 bot.run(TOKEN)
